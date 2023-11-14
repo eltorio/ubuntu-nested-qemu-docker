@@ -48,7 +48,7 @@ make build
 make demo
 ```
 
-## Connect to nested Alpine
+## Connect to nested Ubuntu
 
 While connected to the qemu container you can reach the nested Alpine vm with
 
