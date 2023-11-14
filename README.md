@@ -13,11 +13,15 @@ A copy of the torrent is here… But trusting is something difficulkt :).
 ## How to
 
 ```sh
-docker run -it -v ./entrypoint:/ext/entrypoint eltorio/ubuntu-nested-qemu-docker  
+docker run -p 5900:5900 -p 8080:80 -p 2323:23 -it -v ./ext:/ext eltorio/ubuntu-nested-qemu-docker  
 ```
 
-`./entrypoint` is a mandatory shell script. It will be run after all services in the Ubuntu virtual machine.  
+`./ext/entrypoint` is a mandatory shell script. It will be run after all services in the Ubuntu virtual machine.  
 From inside the docker container you can log in the qemu guest via `telnet localhost` as runner or root without password.
+
+## Connnect to
+
+You can use vnc on port 5900 (:0) , web vnc on port 80 or telnet on port 23
 
 ## Clean
 

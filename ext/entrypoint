@@ -1,0 +1,4 @@
+#!/bin/sh
+DATE=$(date)
+echo "Hello world"
+echo "RAN at $DATE" >> /tmp/entrypoint.log
