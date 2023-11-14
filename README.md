@@ -22,6 +22,7 @@ From inside the docker container you can log in the qemu guest via `telnet local
 ## Connnect to
 
 You can use vnc on port 5900 (:0) , web vnc on port 80 or telnet on port 23
+<img width="1036" alt="Capture d’écran 2023-11-14 à 16 00 20" src="https://github.com/eltorio/ubuntu-nested-qemu-docker/assets/6966689/8fd2909a-4bcf-41dd-9045-f120138e39ab">
 
 ## Clean
 
