@@ -1,0 +1,4 @@
+*.qcow2
+sources/ubuntu.iso
+sources/.DS_Store
+.DS_Store
