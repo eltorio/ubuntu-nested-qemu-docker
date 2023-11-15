@@ -9,10 +9,7 @@ split:
 	split -b 10M sources/hda.qcow2 sources/disk/hda.qcow2-part
 
 launch-tianon-it: join
-	echo "Useful for shrinking the hda image"
-	echo "cd /tmp"
-	echo "cp hda.qcow2 old.qcow2"
-	echo "qemu-img convert -O qcow2 -p -c old.qcow2 hda.qcow2"
+	echo -e "Useful tip for shrinking the hda image:\ncd /tmp\ncp hda.qcow2 old.qcow2\nqemu-img convert -O qcow2 -p -c old.qcow2 hda.qcow2\n"
 	docker run -it --rm \
 		--name qemu-container-tianon \
 		-p 5900:5900 \
